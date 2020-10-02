@@ -118,7 +118,7 @@ class DigitalHouseManager {
             if (listaMatriculas.find { it == matricula } == null) {
                 listaMatriculas.add(matricula)
             } else {
-                println("O aluno  ${aluno.nome} já está matriculado no curso ${curso.nomeDoCurso}!!")
+                println("O aluno  ${aluno.nome} já está matriculado no curso ${curso.nomeDoCurso} !!")
             }
 
         } catch (e: Exception) {
@@ -151,6 +151,7 @@ class DigitalHouseManager {
             println("Matricula ${listaMatriculas.indexOf(i)+1}")
             println("Aluno : ${i.aluno.nome}  ${i.aluno.sobrenome}")
             println("Curso: ${i.curso.nomeDoCurso}")
+            println("Data da matricula${i.data}")
             println("Professor Titular: ${i.curso.professorTitular?.nome}")
             println("Professor Adjunto :${i.curso.professorAdjunto?.nome}")
             println("-------------------------------------------------------------")
