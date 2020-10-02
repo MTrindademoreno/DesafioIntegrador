@@ -18,7 +18,7 @@ class DigitalHouseManager {
             listaCurso.add(cursoAdd)
             println("Curso $nome registrado com sucesso!!")
         } else {
-            println("O Curso $nome já está registrado!!")
+            println("O Curso $nome já está registrado!")
         }
 
 
